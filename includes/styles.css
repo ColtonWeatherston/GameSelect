@@ -1,0 +1,39 @@
+body, html {
+  height: 100%;
+}
+.section {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 65px;
+}
+.textContainer {
+  margin: 5px;
+  text-align: center;
+}
+.questions {
+  margin: 5px;
+}
+section:nth-child(even){
+  background-color: #eee;
+}
+#footer {
+  padding-bottom: 15px;
+}
+#saleForm {
+  margin: auto;
+  width: 35%;
+}
+.card {
+  width: 18rem;
+}
+
+/* For Mobile Devices */
+@media only screen and (max-width: 768px) {
+  #saleForm {
+    width: 95%;
+  }
+  .card {
+    width: 18rem;
+    width: 100%;
+  }
+}

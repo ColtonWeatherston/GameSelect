@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="includes/bootstrap.min.css">
+    <link rel="stylesheet" href="includes/styles.css">
+    <title>GameSelect</title>
+  </head>
+  <body id="gamePacks">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+    	<a class="navbar-brand" href="index.html">GameSelect</a>
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    	<div class="collapse navbar-collapse" id="navbarText">
+    		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+    			<li class="nav-item"><a href="#" class="nav-link disabled">About Us</a></li>
+    			<li class="nav-item"><a href="#" class="nav-link disabled">Testimonials</a></li>
+    			<li class="nav-item"><a href="#" class="nav-link disabled">Contact Us</a></li>
+    		</ul>
+      </div>
+		  </div>
+    </nav>
+    <!--Main Section-->
+    <section class="section">
+      <div class="textContainer">
+        <h1 id="packHeading"></h1>
+        <p id="packDesc">Based on your selection, we think you'll like these games.</p>
+      </div><br><br>
+      <!--Begin Card Section-->
+      <div class="row" id="gameCards">
+        <!--Card 1-->
+        <div class="col-md-4">
+          <div id="gameCard1" class="card text-center mx-auto">
+            <img src="" id="gameImg1" class="card-img-top">
+            <div class="card-body">
+              <h5 id="gameTitle1" class="card-title"></h5>
+              <p id="gameRelease1" class="card-text"></p>
+              <p id="gameMetacritic1" class="card-text"></p>
+              <p id="gameRating1" class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <!--Card 2-->
+        <div class="col-md-4">
+          <div id="gameCard2" class="card text-center mx-auto">
+            <img src="" id="gameImg2" class="card-img-top">
+            <div class="card-body">
+              <h5 id="gameTitle2" class="card-title"></h5>
+              <p id="gameRelease2" class="card-text"></p>
+              <p id="gameMetacritic2" class="card-text"></p>
+              <p id="gameRating2" class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <!--Card 3-->
+        <div class="col-md-4">
+          <div id="gameCard3" class="card text-center mx-auto">
+            <img src="" id="gameImg3" class="card-img-top">
+            <div class="card-body">
+              <h5 id="gameTitle3" class="card-title"></h5>
+              <p id="gameRelease3" class="card-text"></p>
+              <p id="gameMetacritic3" class="card-text"></p>
+              <p id="gameRating3" class="card-text"></p>
+            </div>
+          </div>
+        </div>
+      </div><!--End Card Section-->
+      <br>
+      <!--Package Price Section-->
+      <div id="gamePrice" class="text-center">
+        <h3 id="price"></h3>
+      </div>
+      <!--Countdown Timer Section-->
+      <div id="timerContainer" class="text-center">
+        <h1 id="timerHeading"></h1>
+        <h2 id="timer"></h2>
+      </div>
+      <!--Sales Form Section-->
+      <div id="saleFormContainer">
+      <form id="saleForm" class="mb-3">
+          <label for="saleEmail" class="form-label">
+            Email:
+          </label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="saleEmail" placeholder="Email address">
+            <button type="submit" id="saleSubmit" class="btn btn-primary">Order</button>
+          </div>
+      </form>
+      </div>
+      <!--Final Sale Confirmation-->
+      <div id="saleFinal" class="alert alert-success text-center" role="alert">
+        <h4 class="alert alert-success">Order Submitted!</h4>
+        <p id="saleConfirm"></p>
+      </div>
+    </section>
+    <!--Footer-->
+    <div id="footer" class="pt-4 my-md-5 pt-md-5 border-top">
+      <p class="text-center">Powered by the <a href="https://rawg.io/apidocs" target="_blank">RAWG API</a>.</p>
+      <p class="text-center">Copyright &copy; 2021 GameSelect | All Rights Reserved.</p>
+    </div>
+    <script src="includes/jquery-3.6.0.min.js"></script>
+    <script src="includes/bootstrap.bundle.min.js"></script>
+    <script src="includes/scripts.js"></script>
+  </body>
+</html>

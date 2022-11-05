@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="includes/bootstrap.min.css">
+    <link rel="stylesheet" href="includes/styles.css">
+    <title>GameSelect</title>
+  </head>
+  <body id="home">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+    	<a class="navbar-brand" href="#">GameSelect</a>
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    	<div class="collapse navbar-collapse" id="navbarText">
+    		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+    			<li class="nav-item"><a href="#" class="nav-link disabled">About Us</a></li>
+    			<li class="nav-item"><a href="#" class="nav-link disabled">Testimonials</a></li>
+    			<li class="nav-item"><a href="#" class="nav-link disabled">Contact Us</a></li>
+    		</ul>
+      </div>
+		  </div>
+    </nav>
+    <!--Main Section-->
+    <section class="section">
+      <div class="textContainer">
+        <h1>Game Recommender</h1>
+        <p>Not sure what game to buy? Complete the following quiz to instantly be recommended three games we think you'll like!</p>
+      </div><br><br>
+      <br>
+      <form class="text-center" id="quiz">
+        <div id="q1" class="questions">
+          <h4>What console/device do you play games with?</h4>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioPS4">
+          <label class="form-check-label" for="flexRadioPS4">
+            PS4
+          </label><br>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioXboxOne">
+          <label class="form-check-label" for="flexRadioXboxOne">
+            Xbox One
+          </label><br>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioPC">
+          <label class="form-check-label" for="flexRadioPC">
+            PC
+          </label><br><br>
+        </div>
+        <div id="q2" class="questions">
+          <h4>Do you prefer Singleplayer or Multiplayer?</h4>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioSingleplay">
+          <label class="form-check-label" for="flexRadioSingleplay">
+            Singleplayer
+          </label><br>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioMultiplay">
+          <label class="form-check-label" for="flexRadioMultiplay">
+            Multiplayer
+          </label><br><br>
+        </div>
+        <div id="q3" class="questions">
+          <h4>What genre do you like the most?</h4>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioAction">
+          <label class="form-check-label" for="flexRadioAction">
+            Action
+          </label><br>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioIndie">
+          <label class="form-check-label" for="flexRadioIndie">
+            Indie
+          </label><br>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioSports">
+          <label class="form-check-label" for="flexRadioSports">
+            Sports
+          </label><br><br>
+        </div>
+        <div id="q4" class="questions">
+          <h4>Do you want a "mature" game?</h4>
+          <p id="noMatureOption"></p>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioMatureYes">
+          <label class="form-check-label" for="flexRadioMatureYes" id="flexRadioMatureYesLabel">
+            Yes
+          </label><br>
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioMatureNo">
+          <label class="form-check-label" for="flexRadioMatureNo">
+            No
+          </label><br><br>
+        </div>
+        <button type="button" class="btn btn-primary" id="prev">Previous</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-primary" id="next">Next</button>&nbsp;&nbsp;
+        <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+      </form>
+      </section>
+      <!--Footer-->
+      <div id="footer" class="pt-4 my-md-5 pt-md-5 border-top">
+        <p class="text-center">Powered by the <a href="https://rawg.io/apidocs" target="_blank">RAWG API</a>.</p>
+        <p class="text-center">Copyright &copy; 2021 GameSelect | All Rights Reserved.</p>
+      </div>
+    <script src="includes/jquery-3.6.0.min.js"></script>
+    <script src="includes/bootstrap.bundle.min.js"></script>
+    <script src="includes/scripts.js"></script>
+  </body>
+</html>
