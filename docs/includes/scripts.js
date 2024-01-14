@@ -717,7 +717,11 @@ function gamePacks() {
   var packName = getPackName(PACK_ID);
   // If packName is equal to "N/A", then user will be alerted that the pack id does not exist and will be redirected back to the home page.
   if (packName == "N/A") {
-  alert("Pack ID " + PACK_ID + " does not exist.");
+    if (PACK_ID) { // if PACK_ID has a value
+      alert("Pack ID " + PACK_ID + " does not exist.");
+    } else { // if PACK_ID is null
+      alert("No Pack ID was given in the query.");
+    }
     window.location.href = "index.html";
   }
   $("#packHeading").text(packName);
