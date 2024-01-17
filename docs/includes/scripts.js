@@ -346,7 +346,7 @@ function getGames(packID) {
     type: 'GET',
     url: 'https://api.rawg.io/api/games?',
     data: {
-      key: process.env.API_KEY,
+      key: '98188b8d3dd14a7f9edf6b2bf005a823',
       search: search1
     }
     });
